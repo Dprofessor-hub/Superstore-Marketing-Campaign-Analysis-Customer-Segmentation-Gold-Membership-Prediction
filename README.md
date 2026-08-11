@@ -6,20 +6,6 @@
 
 ---
 
-# 9️⃣ 🖥️ Dashboard Preview
-
-## Executive Summary
-
-<img width="1655" height="917" alt="Screenshot 2026-08-11 131358" src="https://github.com/user-attachments/assets/9f18edbf-df0f-4e5e-8664-ad72bf1e2556" />
-
-
-## Marketing Analytics
-
-<img width="1655" height="925" alt="Screenshot 2026-08-11 131417" src="https://github.com/user-attachments/assets/42fcc9dc-25c7-4910-b823-7f75b041ac6e" />
-
-
----
-
 ## 📌 Project Overview
 
 Superstore runs a year-end promotional campaign offering existing customers a **Gold Membership with a 20% discount on purchases**.
@@ -355,6 +341,19 @@ Superstore-Marketing-Campaign-Analysis/
 │
 └── README.md
 ```
+
+---
+
+# 9️⃣ 🖥️ Dashboard Preview
+
+## Executive Summary
+
+<img width="1655" height="917" alt="Screenshot 2026-08-11 131358" src="https://github.com/user-attachments/assets/9f18edbf-df0f-4e5e-8664-ad72bf1e2556" />
+
+
+## Marketing Analytics
+
+<img width="1655" height="925" alt="Screenshot 2026-08-11 131417" src="https://github.com/user-attachments/assets/42fcc9dc-25c7-4910-b823-7f75b041ac6e" />
 
 ---
 

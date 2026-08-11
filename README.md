@@ -1,459 +1,336 @@
 # 🤖 Superstore Marketing Campaign Analysis
 
-Customer Segmentation & Gold Membership Prediction
+### Customer Segmentation & Gold Membership Prediction
 
-End-to-end Data Analytics Project using Excel, Python, Statistics, Machine Learning and Power BI.
+> **End-to-end Data Analytics Project** using Excel, Python, Statistics, Machine Learning, and Power BI.
 
-# 📌 Project Overview
+---
 
-Superstore runs a year-end promotional campaign offering existing customers a Gold Membership with a 20% discount on purchases.
+# 9️⃣ 🖥️ Dashboard Preview
 
-The objective is to understand:
+## Executive Summary
 
-Which customers are most likely to accept the offer
+<img width="1655" height="917" alt="Screenshot 2026-08-11 131358" src="https://github.com/user-attachments/assets/9f18edbf-df0f-4e5e-8664-ad72bf1e2556" />
 
-Which customer segments are most valuable and receptive
 
-How purchasing behavior differs across customers
+## Marketing Analytics
 
-Which channels are strongest indicators of campaign response
+<img width="1655" height="925" alt="Screenshot 2026-08-11 131417" src="https://github.com/user-attachments/assets/42fcc9dc-25c7-4910-b823-7f75b041ac6e" />
 
-How marketing budget can be focused on high-probability customers
 
-Dataset: 2,213 customers | 22 features
+---
 
-The dataset covers:
+## 📌 Project Overview
 
-Demographics
+Superstore runs a year-end promotional campaign offering existing customers a **Gold Membership with a 20% discount on purchases**.
 
-Household composition
+### 🎯 Objectives
 
-Income
+- Identify customers most likely to accept the Gold Membership
+- Understand customer demographics and purchasing behavior
+- Identify high-value customer segments
+- Analyze product-category and purchase-channel behavior
+- Predict membership acceptance using Machine Learning
+- Develop actionable marketing recommendations
+- Optimize campaign targeting and marketing spend
 
-Recency
+### 📊 Dataset
 
-Product-category spending
+| Metric | Value |
+|---|---:|
+| Customers | **2,213** |
+| Features | **22** |
+| Acceptance Rate | **15.04%** |
+| Average Income | **₹52,247** |
+| Average Total Spend | **₹606.78** |
 
-Purchase channels
+---
 
-Complaints
+## 🎯 Business Questions
 
-Campaign response
+1. What factors influence Gold Membership acceptance?
+2. Which customer segments are most valuable and receptive?
+3. Which product categories contribute most to customer spending?
+4. Which purchase channels are strongest indicators of campaign response?
+5. Can Machine Learning predict customers likely to accept the membership?
+6. How can marketing budget be focused on high-probability customers?
 
-# 🎯 Business Questions
+---
 
-#
+## 🛠️ Tools & Technologies
 
-Business Question
+| Category | Tools / Techniques |
+|---|---|
+| Data Validation | **Excel** |
+| Data Cleaning | **Python, Pandas, NumPy** |
+| Exploratory Data Analysis | **Python, Matplotlib** |
+| Statistical Analysis | **T-Test, Chi-Square Test, ANOVA / Group Analysis** |
+| Machine Learning | **Logistic Regression, Random Forest, SMOTE** |
+| Data Visualization | **Power BI** |
+| Documentation | **Report & Presentation** |
 
-1
+---
 
-What factors influence Gold Membership acceptance?
+## 🔄 Project Workflow
 
-2
-
-Which customer segments are most valuable and receptive?
-
-3
-
-Which product categories contribute most to customer spend?
-
-4
-
-Which purchase channels are strongest indicators of campaign response?
-
-5
-
-Can machine learning predict customers likely to accept the membership?
-
-6
-
-How can marketing budget be focused on high-probability customers?
-
-# 🛠️ Tools & Technologies
-
-Area
-
-Tools / Techniques
-
-Data Validation & Initial Analysis
-
-Excel
-
-Data Cleaning & Transformation
-
-Python, Pandas, NumPy
-
-Exploratory Data Analysis
-
-Python, Matplotlib
-
-Statistical Analysis
-
-T-test, Chi-square Test, ANOVA / group analysis
-
-Machine Learning
-
-Logistic Regression, Random Forest, SMOTE
-
-Business Intelligence
-
-Microsoft Power BI
-
-Documentation
-
-Report & Presentation
-
-# 📊 Project Workflow
-
+```text
 Raw Dataset
-     ↓
-Excel Validation
-     ↓
-Python Cleaning & Feature Engineering
-     ↓
+    ↓
+Excel Data Validation
+    ↓
+Python Data Cleaning & Transformation
+    ↓
+Feature Engineering
+    ↓
 Exploratory Data Analysis
-     ↓
+    ↓
 Statistical Analysis
-     ↓
-Machine Learning Modeling
-     ↓
+    ↓
+Machine Learning
+    ↓
 Power BI Dashboard
-     ↓
+    ↓
 Business Insights & Recommendations
+```
 
-1️⃣ Excel — Data Validation
+---
 
-Checked data integrity and field consistency.
+# 1️⃣ Excel — Data Validation
 
-Reviewed missing values and anomalies.
+- Checked data integrity and field consistency
+- Reviewed missing values and anomalies
+- Validated demographic fields
+- Validated spending and purchase-count fields
+- Checked the campaign response field
+- Prepared the dataset for further analysis
 
-Validated demographic, spending, purchase-count, and response fields.
+---
 
-Prepared the dataset for further analysis.
+# 2️⃣ Python — Data Cleaning & EDA
 
-2️⃣ Python — Data Preparation & EDA
+Python was used for data preparation, transformation, feature engineering, and exploratory analysis.
 
-Performed data cleaning, transformation, feature engineering, and exploratory analysis.
+### 🔧 Feature Engineering
 
-Key engineered metrics:
+- `Age`
+- `Tenure`
+- `Total_Spend`
+- `Category_Breadth`
+- Engagement / purchase-channel metrics
+- Income bands
+- Customer segments
 
-Age
+### 📊 Exploratory Analysis
 
-Tenure
+- Customer income
+- Customer age
+- Recency
+- Product-category spending
+- Purchase channels
+- Education
+- Marital status
+- Household composition
+- Campaign response
 
-Total_Spend
+---
 
-Category_Breadth
+# 3️⃣ 📐 Statistical Analysis
 
-Engagement / purchase-channel metrics
+Statistical tests were used to identify relationships between customer characteristics and membership acceptance.
 
-Income bands and customer segments
+| Analysis | Finding |
+|---|---|
+| **Education vs Response** | Chi-square test showed a significant association |
+| **Marital Status vs Response** | Chi-square test showed a significant association |
+| **Income vs Response** | Responders had significantly higher average income |
 
-EDA focused on:
+### 💡 Income Comparison
 
-Income
+| Customer Group | Average Income |
+|---|---:|
+| Responders | **₹60,210** |
+| Non-Responders | **₹50,824** |
 
-Recency
+---
 
-Spending behavior
+# 4️⃣ 🤖 Machine Learning
 
-Product categories
+The target variable was **`Response`**.
 
-Demographics
+| Response | Meaning |
+|---:|---|
+| `1` | Customer accepted the Gold Membership |
+| `0` | Customer did not accept |
 
-Household composition
+### Models Implemented
 
-Purchasing channels
+- Logistic Regression
+- Random Forest
+- Random Forest + SMOTE
 
-3️⃣ Statistical Analysis
+### ⚠️ Class Imbalance
 
-Statistical testing was used to determine whether important customer characteristics were associated with campaign acceptance.
+- **1,880 Non-Responders**
+- **333 Responders**
 
-Examples:
+Responders represented only about **15%** of customers, so **SMOTE** was used to improve responder detection.
 
-Education vs Response: Chi-square test showed a significant association.
+## 📊 Model Comparison
 
-Marital Status vs Response: Chi-square test showed a significant association.
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 86% | 63% | 18% | 0.28 | 0.80 |
+| Random Forest | 86% | 65% | 22% | 0.33 | 0.84 |
+| **Random Forest + SMOTE** | **84%** | **47%** | **48%** | **0.47** | **0.83** |
 
-Income: Responders had significantly higher average income than non-responders.
+### 🏆 Recommended Model — Random Forest + SMOTE
 
-4️⃣ Machine Learning
+| Metric | Result |
+|---|---:|
+| Responders Correctly Identified | **32** |
+| Original Random Forest | **15** |
+| Recall | **22% → 48%** |
+| F1 Score | **0.33 → 0.47** |
 
-The target variable was Response:
+> In a marketing campaign, identifying more genuine prospects can be more valuable than maximizing overall accuracy.
 
-Response
+### 🔎 Top Predictive Features
 
-Meaning
+1. **Recency**
+2. **Web/Store Ratio**
+3. **Total Spend**
+4. **Income**
+5. **Tenure**
+6. **Family Size**
+7. **Store Purchases**
 
-1
+---
 
-Customer accepted the Gold Membership
+# 5️⃣ 📊 Power BI Dashboard
 
-0
+Two interactive dashboards were developed.
 
-Customer did not accept
+## Executive Summary Dashboard
 
-Models evaluated:
+### KPIs
 
-Logistic Regression
+- Membership Acceptance Rate
+- Average Customer Income
+- Average Total Spend
 
-Random Forest
+### Visualizations
 
-Random Forest + SMOTE
+- Membership Response Distribution
+- Acceptance Rate by Education
+- Average Spend by Product Category
+- Acceptance Rate by Marital Status
+- Executive Insights Panel
 
-Because responders represented only about 15% of customers, SMOTE was used to address class imbalance.
+### Filters
 
-5️⃣ Power BI Dashboard
+- Marital Status
+- Education
 
-Two interactive dashboard views were developed.
+## Marketing Analytics Dashboard
 
-Executive Summary Dashboard
+### Visualizations
 
-Membership Acceptance Rate
+- Total Spend vs Recency by Response
+- Acceptance Rate by Income Band
+- Average Spend by Category: Responders vs Non-Responders
+- Average Total Spend by Income Band
 
-Average Customer Income
+### Filters
 
-Average Total Spend
+- Family Size
+- Response Label
 
-Response distribution
+---
 
-Acceptance by Education
+# 6️⃣ 📈 Key Business Insights
 
-Acceptance by Marital Status
+## 💰 Campaign Performance
 
-Average Spend by Product Category
+- **2,213 customers** were analyzed
+- Overall Gold Membership acceptance rate was **15.04%**
+- Average customer income was approximately **₹52,247**
+- Average total spend over two years was **₹606.78**
+- **Wine** was the highest-spending product category
 
-Executive insights panel
+## 👥 Customer Segmentation
 
-Demographic filters
+- Higher-income customers were more likely to accept the membership
+- Responders averaged **₹60,210** income vs **₹50,824** for non-responders
+- **PhD and Master** customers showed stronger acceptance
+- Smaller households showed higher acceptance than households with children/teenagers
 
-Marketing Analytics Dashboard
+## 🛒 Product Spending
 
-Total Spend vs Recency by Response
+Responders spent more than non-responders across **all six product categories**.
 
-Acceptance Rate by Income Band
+**Strongest spending differences:**
 
-Average Spend by Category: Responders vs Non-Responders
+1. 🍷 Wine
+2. 🥩 Meat Products
+3. 🪙 Gold Products
+4. 🐟 Fish Products
+5. 🍬 Sweet Products
+6. 🍎 Fruits
 
-Average Total Spend by Income Band
+## 📱 Purchase Channels
 
-Family Size filter
+| Channel | Key Insight |
+|---|---|
+| **In-Store** | Largest overall channel, but not a strong differentiator |
+| **Web** | Responders had higher average web purchases |
+| **Catalogue** | Strongest channel differentiator |
+| **Deals / Discounts** | Very little difference between responders and non-responders |
 
-Response Label filter
+### ⭐ Channel Comparison
 
-📈 Key Business Insights
+| Channel | Responders | Non-Responders |
+|---|---:|---:|
+| Web Purchases | **5.07** | **3.91** |
+| Catalogue Purchases | **4.20** | **2.40** |
 
-Campaign Performance
+---
 
-KPI
+# 7️⃣ 💡 Strategic Recommendations
 
-Value
-
-Customers Analyzed
-
-2,213
-
-Gold Membership Acceptance Rate
-
-15.04%
-
-Average Customer Income
-
-₹52,247
-
-Average Total Spend — 2 Years
-
-₹606.78
-
-Highest-Spending Product Category
-
-Wine
-
-Customer Segmentation
-
-Higher-income customers were more likely to accept the membership.
-
-Responders had an average income of ₹60,210, compared with ₹50,824 for non-responders.
-
-Higher education groups, particularly PhD and Master customers, showed stronger acceptance.
-
-Customers with smaller households showed higher acceptance than households with children/teenagers.
-
-Product Spending
-
-Responders spent more than non-responders across all six product categories.
-
-Strongest spending differences:
-
-🍷 Wine
-
-🥩 Meat Products
-
-🪙 Gold Products
-
-🐟 Fish Products
-
-🍬 Sweet Products
-
-🍎 Fruits
-
-Purchase Channels
-
-Channel
-
-Key Finding
-
-In-Store
-
-Largest overall purchase channel, but not a strong differentiator
-
-Web
-
-Responders averaged more web purchases than non-responders
-
-Catalogue
-
-Strongest channel differentiator
-
-Deals / Discounts
-
-Very little difference between responders and non-responders
-
-# 🤖 Machine Learning Results
-
-The dataset had significant class imbalance:
-
-1,880 non-responders vs 333 responders
-
-Model Comparison
-
-Model
-
-Accuracy
-
-Precision
-
-Recall
-
-F1
-
-ROC-AUC
-
-Logistic Regression
-
-86%
-
-63%
-
-18%
-
-0.28
-
-0.80
-
-Random Forest
-
-86%
-
-65%
-
-22%
-
-0.33
-
-0.84
-
-Random Forest + SMOTE
-
-84%
-
-47%
-
-48%
-
-0.47
-
-0.83
-
-# 🏆 Selected Model — Random Forest + SMOTE
-
-Although accuracy decreased slightly, the SMOTE model improved the ability to identify actual responders.
-
-Metric
-
-Result
-
-Responders correctly identified
-
-32
-
-Original Random Forest
-
-15
-
-Recall
-
-22% → 48%
-
-F1 Score
-
-0.33 → 0.47
-
-For a marketing campaign, identifying more genuine prospects is more valuable than maximizing overall accuracy alone.
-
-🔎 Top Predictive Features
-
-Recency
-
-Web/Store Ratio
-
-Total Spend
-
-Income
-
-Tenure
-
-Family Size
-
-Store Purchases
-
-# 💡 Strategic Recommendations
-
-1️⃣ Target High-Income, High-Spend Customers
+### 1. 🎯 Target High-Income, High-Spend Customers
 
 Prioritize customers with:
 
-Income above ₹55,000
+- Income above **₹55,000**
+- Total spend above **₹400**
 
-Total spend above ₹400
-
-2️⃣ Prioritize Catalogue & Web Campaigns
+### 2. 📧 Prioritize Catalogue & Web Campaigns
 
 Use catalogue and digital campaigns as primary targeting channels because they show stronger separation between responders and non-responders.
 
-3️⃣ Time Offers Around Recent Purchases
+### 3. ⏱️ Time Offers Around Recent Purchases
 
-Recency was the strongest predictive feature.
+**Recency was the strongest predictive feature.**
 
-Customers who purchased recently should receive membership offers while engagement is high.
+Target customers soon after their purchases while brand engagement is high.
 
-4️⃣ Re-engage Dormant Customers First
+### 4. 🔄 Re-Engage Dormant Customers
 
-Customers with high recency and low spending should receive a re-engagement campaign before being targeted for membership.
+Customers with high recency and low spending should receive a **re-engagement campaign first** before being targeted for membership.
 
-5️⃣ Adapt the Offer for Family Households
+### 5. 👨‍👩‍👧 Adapt Offers for Family Households
 
-Customers with children or teenagers showed lower acceptance.
+Customers with children or teenagers showed lower acceptance. Consider **family-oriented membership benefits**.
 
-Consider family-oriented benefits rather than using a one-size-fits-all membership offer.
+### 6. 🤖 Use ML Scores for Campaign Prioritization
 
-6️⃣ Use ML Scores for Campaign Prioritization
+Use the **Random Forest + SMOTE** model to score customers and prioritize personalized outreach toward the highest-probability customers.
 
-Use the Random Forest + SMOTE model to score customers and focus personalized outreach on the highest-probability segment instead of contacting everyone equally.
+---
 
-# 📂 Suggested Repository Structure
+# 8️⃣ 📂 Repository Structure
 
+```text
 Superstore-Marketing-Campaign-Analysis/
 │
 ├── data/
@@ -477,49 +354,72 @@ Superstore-Marketing-Campaign-Analysis/
 │   └── marketing-dashboard.png
 │
 └── README.md
+```
 
-Rename the uploaded files/folders as needed when organizing the GitHub repository. Avoid committing confidential or sensitive business data if the dataset is not publicly shareable.
+---
 
-# 🖥️ Dashboard Preview
+# 🔟 🎯 Final Outcome
 
-Executive Summary
+This project demonstrates a complete **end-to-end Data Analytics workflow**:
 
+```text
+Data → Cleaning → EDA → Statistics → Machine Learning → Dashboard → Insights → Recommendations
+```
 
+### Skills Demonstrated
 
-Marketing Analytics
+- Excel Data Analysis
+- Python & Pandas
+- Data Cleaning
+- Feature Engineering
+- Exploratory Data Analysis
+- Statistical Testing
+- Machine Learning
+- SMOTE & Class Imbalance Handling
+- Power BI Dashboard Development
+- Customer Segmentation
+- Business Analysis
+- Data-Driven Recommendations
 
+### Business Value
 
+The analysis helps the marketing team:
 
-# 🎯 Final Outcome
+- Identify high-value customers
+- Improve campaign targeting
+- Prioritize effective marketing channels
+- Identify likely membership responders
+- Reduce inefficient marketing spend
+- Make data-driven campaign decisions
 
-This project demonstrates an end-to-end analytical workflow—from raw customer data to business recommendations.
-
-The analysis combines:
-
-Descriptive analytics
-
-Statistical testing
-
-Predictive modeling
-
-Interactive Power BI reporting
-
-The goal is to help a marketing team:
-
-Identify high-value customers
-
-Improve campaign targeting
-
-Use marketing resources more efficiently
+---
 
 # 👨‍💻 Author
 
-Dipanshu Rangari
+### Dipanshu Rangari
 
-Data Analyst | Excel | SQL | Python | Power BI | Tableau | Statistics | Machine Learning
+**Data Analyst**
 
-🔗 GitHub: Dprofessor-hub
+**Skills:** Excel | SQL | Python | Power BI | Tableau | Statistics | Machine Learning
+
+🔗 **GitHub:**  
+https://github.com/Dprofessor-hub
+
+---
 
 # ⭐ Key Takeaway
 
-The strongest membership prospects are recent, high-income, high-spending customers who are actively engaged through web and catalogue channels—making targeted outreach more effective than a broad campaign.
+> **The strongest membership prospects are recent, high-income, high-spending customers who are actively engaged through web and catalogue channels — making targeted outreach more effective than a broad campaign.**
+
+---
+
+## 📚 Project Documentation
+
+This repository also contains:
+
+- Problem Statement
+- Original Dataset
+- Cleaned / Engineered Dataset
+- Power BI Dashboard
+- Project Report
+- Project Presentation

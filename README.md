@@ -413,8 +413,8 @@ The analysis helps the marketing team:
 
 **Skills:** Excel | SQL | Python | Power BI | Tableau | Statistics | Machine Learning
 
-🔗 **GitHub:**  
-https://github.com/Dprofessor-hub
+🔗 **GitHub:**    
+    https://github.com/Dprofessor-hub
 
 ---
 

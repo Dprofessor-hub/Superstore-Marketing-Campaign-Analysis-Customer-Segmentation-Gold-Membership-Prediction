@@ -4,6 +4,18 @@
 
 > **End-to-end Data Analytics Project** using Excel, Python, Statistics, Machine Learning, and Power BI.
 
+
+---
+
+## 🌐 Explore the Project
+
+### 🚀 View Interactive Project Website
+    https://claude.ai/artifact/XaaddUygt87gjmNTYyesZM
+
+A visual case study covering the business problem, data preparation,
+EDA, customer segmentation, statistical analysis, machine learning,
+Power BI dashboards, insights, and marketing recommendations.
+
 ---
 
 ## 📌 Project Overview
